@@ -1,0 +1,131 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+.calculator {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 320px;
+}
+
+.display {
+    font-size: 2.5em;
+    background-color: #000;
+    color: #fff;
+    text-align: right;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    height: 70px;
+    line-height: 70px;
+    overflow: hidden;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    padding: 20px;
+    font-size: 1.5em;
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.btn:hover {
+    background-color: #d5d5d5;
+}
+
+.btn:active {
+    background-color: #cacaca;
+    transform: scale(0.95);
+}
+
+.operator {
+    background-color: #6a11cb;
+    color: #fff;
+}
+
+.operator:hover {
+    background-color: #5a0faa;
+}
+
+.operator:active {
+    background-color: #4a0e8a;
+}
+
+.clear {
+    grid-column: span 4;
+    background-color: #ff4e50;
+    color: #fff;
+}
+
+.clear:hover {
+    background-color: #e04344;
+}
+
+.clear:active {
+    background-color: #c03638;
+}
+
+.history {
+    margin-top: 20px;
+}
+
+.history h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5em;
+    color: #444;
+    text-align: center;
+}
+
+.history .clear-history {
+    background-color: #ff4e50;
+    color: #fff;
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+}
+
+.history .clear-history:hover {
+    background-color: #e04344;
+}
+
+.history .clear-history:active {
+    background-color: #c03638;
+}
+
+.history ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.history ul li {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #333;
+}
+
+.history ul li:nth-child(odd) {
+    background-color: #e0e0e0;
+}
